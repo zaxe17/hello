@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+	list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("background.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to top, #28F3FF, #E528FF);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+	box-shadow: 0 0px 40px #28F3FF;
+}
+
+label.logo {
+	color: #C4FCFF;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0;
+	font-weight: bold;
+	font-family: 'Alfa Slab One', cursive;
+}
+
+span {
+	color: #007980;
+}
+
+label a {
+	color: #CDFFFC;
+	padding: 7px 13px;
+	border-radius: 6px;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: default;
+}
+
+.logo img {
+	position: relative;
+	top: 10px;
+	margin-left: -50px;
+	width: 50px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+	font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin: 0 5px;  
+}
+
+.nav-bar ul li a:hover {
+    color: #11101b;
+    background: rgba(207, 110, 231 , 0.3);
+	text-shadow: 0 0 15px #28F3FF;
+}
+
+.nav-bar ul li a.active {
+    color: #11101b;
+    background: rgba(207, 110, 231 , 0.3);
+	box-shadow: 0 0 15px 1px #28F3FF, inset 0 0 15px 1px #28F3FF;
+	text-shadow: 0 0 15px #28F3FF;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+	.logo img {
+		position: relative;
+		top: 5px;
+		margin-left: -10px;
+		margin-right: -10px;
+		width: 40px;
+	}
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+		border-radius: 100px;
+    }
+    .nav-bar {
+        z-index: 100;
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgba(88, 199, 255, 0.2);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 450px;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5;
+        opacity: 0;
+    }
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+/*HOME PAGE*/
+.transition {
+	animation: transitionIn 4s;
+}
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: rotationX(10px);
+	}
+	to {
+		opacity: 1;
+		transform: rotationX(0);
+	}
+}
+
+.hi {
+	color: #B9E9FC;
+	font-size: 40px;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-family: 'Abril Fatface', cursive;
+}
+
+.container {
+	font-family: 'Alfa Slab One', cursive;
+	width: 100%;
+	height: 100vh;
+	color: #B9E9FC;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container h1 {
+	font-size: 80px;
+	font-weight: 600px;
+	font-family: 'Abril Fatface', cursive;
+}
+
+span.auto-type {
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(to bottom left, #28F3FF, #E528FF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 858px) {
+	.hi {
+		color: #B9E9FC;
+		font-size: 18px;
+		text-align: center;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		font-family: 'Abril Fatface', cursive;
+	}
+
+	.container {
+		font-family: 'Alfa Slab One', cursive;
+		width: 100%;
+		height: 100vh;
+		color: #B9E9FC;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container h1 {
+		font-size: 35px;
+		font-weight: 600px;
+		font-family: 'Abril Fatface', cursive;
+	}
+
+	span.auto-type {
+		font-family: 'Prata', serif;
+		background: linear-gradient(to bottom left, #28F3FF, #E528FF);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
