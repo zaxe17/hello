@@ -57,6 +57,7 @@ label a {
 	top: 10px;
 	margin-left: -50px;
 	width: 50px;
+	-webkit-user-drag: none;
 }
 
 .hamburger {
