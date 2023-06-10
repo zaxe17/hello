@@ -33,6 +33,7 @@ header {
     justify-content: space-between;
     padding: 0 100px;
 	box-shadow: 0 0px 40px #28F3FF;
+	position: fixed;
 }
 
 label.logo {
