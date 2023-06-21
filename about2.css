@@ -34,6 +34,7 @@ header {
     padding: 0 100px;
 	box-shadow: 0 0px 40px #28F3FF;
 	position: fixed;
+	margin-top: -5px;
 }
 
 label.logo {
@@ -117,6 +118,11 @@ label a {
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: 100% 100%;
+	}
+	header {
+		z-index: 1111;
+		position: fixed;
+		margin-top: -35px;
 	}
 	.logo img {
 		position: relative;
