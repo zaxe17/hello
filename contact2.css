@@ -112,6 +112,10 @@ label a {
 		background-attachment: fixed;
 		background-size: 100% 100%;
 	}
+	header {
+		position: fixed;
+		z-index: 1111;
+	}
 	.logo img {
 		position: relative;
 		top: 5px;
@@ -270,7 +274,7 @@ label a {
 
 @media (max-width: 858px) {
 	.hero {
-		margin-top: 5px;
+		margin-top: 0;
 	}
 	.social-link {
 		display: block;
@@ -289,13 +293,14 @@ label a {
 	}
 	.social-link a {
 		display: block;
-		background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0.1));
+		background: none;
+		box-shadow: none;
 		width: 80px;
 		height: 80px;
 		text-align: center;
 		text-decoration: none;
 		color: black;
-		margin: 75px 0px;
+		margin: 60px 0px;
 		border-radius: 50px;
 		position: relative;
 		overflow: hidden;
@@ -305,22 +310,19 @@ label a {
 	@keyframes animate {
 		0% {
 			color: #e528ff;
-			box-shadow: 0 0 20px 5px rgba(229, 40, 255, 0.5);
 			text-shadow: 0 0 10px rgba(229, 40, 255, 0.5);
 		}
 		50% {
 			color: #28f3ff;
-			box-shadow: 0 0 20px 7px rgba(40, 243, 255, 0.5);
 			text-shadow: 0 0 10px rgba(40, 243, 255, 0.5);
 		}
 		100% {
 			color: #e528ff;
-			box-shadow: 0 0 20px 5px rgba(229, 40, 255, 0.5);
 			text-shadow: 0 0 10px rgba(229, 40, 255, 0.5);
 		}
 	}
 	.social-link a .fa-brands {
-		font-size: 50px;
+		font-size: 55px;
 		line-height: 80px;
 		position: relative;
 		z-index: 10;
