@@ -105,6 +105,13 @@ label a {
 }
 
 @media only screen and (max-width: 900px) {
+	body {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("loptopbg2.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
 	.logo img {
 		position: relative;
 		top: 5px;
