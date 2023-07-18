@@ -328,7 +328,7 @@ label a {
 		z-index: 10;
 		transition: color 0.5s;
 	}
-	.social-link a:hover {
+	.social-link a:active {
 		box-shadow: 0 0 20px 13px rgba(229, 40, 255, 0.5),
 					0 0 30px 15px rgba(40, 243, 255, 0.5);
 		transition: 0.5s;
