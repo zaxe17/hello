@@ -142,7 +142,7 @@ label a {
         background: rgba(88, 199, 255, 0.2);
         transition: 0.5s;
         overflow: hidden;
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(3px);
     }
     .nav-bar.active {
         height: 450px;
