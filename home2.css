@@ -238,6 +238,8 @@ span.auto-type {
 	}
 
 	.container h1 {
+		position: absolute;
+	        bottom: 40%;
 		font-size: 35px;
 		font-weight: 600px;
 		font-family: 'Abril Fatface', cursive;
