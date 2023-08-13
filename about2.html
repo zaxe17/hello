@@ -87,5 +87,27 @@
             navBar.classList.toggle("active");
         }
     </script>
+
+    <!-- Nav-bar exit click-->
+    <script>
+        function toggleNavBar() {
+            const navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            toggleNavBar();
+        }
+
+        function collapseNavBarOnClickOutside(event) {
+            const navBar = document.querySelector(".nav-bar");
+            if (!event.target.closest(".nav-bar") && !event.target.closest(".hamburger")) {
+                navBar.classList.remove("active");
+            }
+        }
+
+        document.addEventListener("click", collapseNavBarOnClickOutside);
+    </script>
 </body>
 </html>
