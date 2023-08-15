@@ -281,7 +281,7 @@ span.auto-type {
 	color: #252839;
 	-webkit-text-stroke: 0.1vw #383d52;
 	text-transform: uppercase;
-	family-font: "Poppins";
+	font-family: "Poppins";
 }
 
 .loader h2::before {
