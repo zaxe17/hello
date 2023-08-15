@@ -247,9 +247,10 @@ label a {
 
 .social-link a:hover .fa-instagram {
 	color: rgb(48, 48, 48);
-    background: linear-gradient(to bottom left, #405DE6, #405DE6, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .social-link a:hover {
@@ -278,6 +279,7 @@ label a {
 		margin-top: 0;
 	}
 	.social-link {
+	  margin-top: 50px;
 		display: block;
 		animation: transitionIn 1s;
 	}
@@ -296,12 +298,12 @@ label a {
 		display: block;
 		background: none;
 		box-shadow: none;
-		width: 80px;
-		height: 80px;
+		width: 90px;
+		height: 90px;
 		text-align: center;
 		text-decoration: none;
 		color: black;
-		margin: 75px 0px;
+		margin: 65px 0px;
 		border-radius: 50px;
 		position: relative;
 		overflow: hidden;
@@ -323,7 +325,7 @@ label a {
 		}
 	}
 	.social-link a .fa-brands {
-		font-size: 55px;
+		font-size: 65px;
 		line-height: 80px;
 		position: relative;
 		z-index: 10;
