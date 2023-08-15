@@ -12,6 +12,9 @@
 
 </head>
 <body>
+    <div class="loader">
+        <h2 data-text="HELLO STRANGER">HELLO <br> STRANGER</h2>
+    </div>
     <header>
         <div class="logo">
             <img src="iconanime.png" alt="">
@@ -118,6 +121,23 @@
         }
 
         document.addEventListener("click", collapseNavBarOnClickOutside);
+    </script>
+    
+    <!--loader-->
+    <script>
+        window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader");
+
+  setTimeout(() => {
+    loader.classList.add("loader--hidden");
+
+    loader.addEventListener("transitionend", () => {
+      document.body.removeChild(loader);
+    });
+  }, 3000);
+});
+
+
     </script>
 </body>
 </html>
