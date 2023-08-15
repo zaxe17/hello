@@ -326,7 +326,7 @@ label a {
 	}
 	.social-link a .fa-brands {
 		font-size: 65px;
-		line-height: 95px;
+		line-height: 90px;
 		position: relative;
 		z-index: 10;
 		transition: color 0.5s;
