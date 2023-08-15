@@ -296,7 +296,7 @@ span.auto-type {
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke: 0vw #383d52;
 	overflow: hidden;
-	animation: animate 6s linear infinite;
+	animation: animate 4s linear infinite;
 }
 
 @keyframes animate {
