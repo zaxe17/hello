@@ -266,7 +266,7 @@ span.auto-type {
   align-items: center;
   min-height:100vh;
   background: #252839;
-  z-index: 2000;
+  z-index: 9000;
   transition: opacity 0.75s, visibility 0.75s;
 }
 
