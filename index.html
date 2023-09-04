@@ -1,143 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
-    <link rel = "icon" type = "image/x=icon" href = "iconanime.png">
-    <link rel="stylesheet" href="home2.css">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Dancing+Script&family=Lobster&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Prata&family=Source+Serif+Pro:wght@300&display=swap'); </style>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
-</head>
-<body>
-    <div class="loader">
-        <h2 data-text="HELLO STRANGER">HELLO <br> STRANGER</h2>
-    </div>
-    <header>
-        <div class="logo">
-            <img src="iconanime.png" alt="">
-            <label class = "logo"><a class = "back" href = "https://zaxe17.github.io/hello/">JMS•<span>J</span></a></label>
-        </div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="#" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="about2.html">About</a>
-                </li>
-                <li>
-                    <a href="contact2.html">Contact</a>
-                </li>
-                <li>
-                    <a href="feedback2.html">Feedback</a>
-                </li>
-		<li>
-                    <a href="PUPGeneralClearance (1).pdf">Download</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="transition">
-		<div class = "hi">
-			<h1>HI! I'M</h1>
-		</div>
-		<div class = "container">
-			<h1><span class = "auto-type"></span></h1>
-		</div>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-	<script>
-		var typed = new Typed(".auto-type", {
-			strings: ["JAN MARC", "A WEB DEVELOPER", "A GAMER"],
-			typeSpeed: 150,
-			backSpeed: 100,
-			loop: true
-		})
-	</script>
-    <!--NAVIGATION BAR-->
-    <script>
-        hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function() {
-            navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
-    </script>
-	<!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "102211412777011");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-	
-    <!-- Nav-bar exit click-->
-    <script>
-        function toggleNavBar() {
-            const navBar = document.querySelector(".nav-bar");
-            navBar.classList.toggle("active");
-        }
-
-        const hamburger = document.querySelector(".hamburger");
-        hamburger.onclick = function() {
-            toggleNavBar();
-        }
-
-        function collapseNavBarOnClickOutside(event) {
-            const navBar = document.querySelector(".nav-bar");
-            if (!event.target.closest(".nav-bar") && !event.target.closest(".hamburger")) {
-                navBar.classList.remove("active");
-            }
-        }
-
-        document.addEventListener("click", collapseNavBarOnClickOutside);
-    </script>
-    
-    <!--loader-->
-    <script>
-        window.addEventListener("load", () => {
-  const loader = document.querySelector(".loader");
-
-  setTimeout(() => {
-    loader.classList.add("loader--hidden");
-
-    loader.addEventListener("transitionend", () => {
-      document.body.removeChild(loader);
-    });
-  }, 3500);
-});
-
-
-    </script>
-</body>
-</html>
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+     <meta charset="UTF-8"> 
+     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>HOME</title> 
+     <link rel = "icon" type = "image/x=icon" href = "iconanime.png"> 
+     <link rel="stylesheet" href="home2.css"> 
+     <style> @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Anton&family=Dancing+Script&family=Lobster&family=Montserrat:wght@300&family=Open+Sans:wght@300&family=Poppins:wght@100&family=Prata&family=Source+Serif+Pro:wght@300&display=swap'); </style> 
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" /> 
+  
+ </head> 
+ <body> 
+     <div class="loader"> 
+         <h2 data-text="HELLO STRANGER">HELLO <br> STRANGER</h2> 
+     </div> 
+     <header> 
+         <div class="logo"> 
+             <img src="iconanime.png" alt=""> 
+             <label class = "logo"><a class = "back" href = "https://zaxe17.github.io/hello/">JMS•<span>J</span></a></label> 
+         </div> 
+         <div class="hamburger"> 
+             <div class="line"></div> 
+             <div class="line"></div> 
+             <div class="line"></div> 
+         </div> 
+         <nav class="nav-bar"> 
+             <ul> 
+                 <li> 
+                     <a href="#" class="active">Home</a> 
+                 </li> 
+                 <li> 
+                     <a href="about2.html">About</a> 
+                 </li> 
+                 <li> 
+                     <a href="contact2.html">Contact</a> 
+                 </li> 
+                 <li> 
+                     <a href="feedback2.html">Feedback</a> 
+                 </li>
+             </ul> 
+         </nav> 
+     </header> 
+     <div class="transition"> 
+                 <div class = "hi"> 
+                         <h1>HI! I'M</h1> 
+                 </div> 
+                 <div class = "container"> 
+                         <h1><span class = "auto-type"></span></h1> 
+                 <a href="Website-Overview-Streamlining-Supply.pdf" class="button">php project</a>
+                 </div>                 
+         </div> 
+         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
+         <script> 
+                 var typed = new Typed(".auto-type", { 
+                         strings: ["JAN MARC", "A WEB DEVELOPER", "A GAMER"], 
+                         typeSpeed: 150, 
+                         backSpeed: 100, 
+                         loop: true 
+                 }) 
+         </script> 
+     <!--NAVIGATION BAR--> 
+     <script> 
+         hamburger = document.querySelector(".hamburger"); 
+         hamburger.onclick = function() { 
+             navBar = document.querySelector(".nav-bar"); 
+             navBar.classList.toggle("active"); 
+         } 
+     </script> 
+         <!-- Messenger Chat Plugin Code --> 
+     <div id="fb-root"></div> 
+  
+     <!-- Your Chat Plugin code --> 
+     <div id="fb-customer-chat" class="fb-customerchat"> 
+     </div> 
+  
+     <script> 
+       var chatbox = document.getElementById('fb-customer-chat'); 
+       chatbox.setAttribute("page_id", "102211412777011"); 
+       chatbox.setAttribute("attribution", "biz_inbox"); 
+     </script> 
+  
+     <!-- Your SDK code --> 
+     <script> 
+       window.fbAsyncInit = function() { 
+         FB.init({ 
+           xfbml            : true, 
+           version          : 'v15.0' 
+         }); 
+       }; 
+  
+       (function(d, s, id) { 
+         var js, fjs = d.getElementsByTagName(s)[0]; 
+         if (d.getElementById(id)) return; 
+         js = d.createElement(s); js.id = id; 
+         js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js'; 
+         fjs.parentNode.insertBefore(js, fjs); 
+       }(document, 'script', 'facebook-jssdk')); 
+     </script> 
+  
+     <!-- Nav-bar exit click--> 
+     <script> 
+         function toggleNavBar() { 
+             const navBar = document.querySelector(".nav-bar"); 
+             navBar.classList.toggle("active"); 
+         } 
+  
+         const hamburger = document.querySelector(".hamburger"); 
+         hamburger.onclick = function() { 
+             toggleNavBar(); 
+         } 
+  
+         function collapseNavBarOnClickOutside(event) { 
+             const navBar = document.querySelector(".nav-bar"); 
+             if (!event.target.closest(".nav-bar") && !event.target.closest(".hamburger")) { 
+                 navBar.classList.remove("active"); 
+             } 
+         } 
+  
+         document.addEventListener("click", collapseNavBarOnClickOutside); 
+     </script> 
+  
+     <!--loader--> 
+     <script> 
+         window.addEventListener("load", () => { 
+   const loader = document.querySelector(".loader"); 
+  
+   setTimeout(() => { 
+     loader.classList.add("loader--hidden"); 
+  
+     loader.addEventListener("transitionend", () => { 
+       document.body.removeChild(loader); 
+     }); 
+   }, 3500); 
+ }); 
+  
+     </script> 
+ </body> 
+ </html>
