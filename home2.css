@@ -320,7 +320,7 @@ span.auto-type {
     overflow: hidden;
     font-size: 16px;
     transition: 0.3s ease, font-size 500ms;
-    transition-delay: 1s, 0s;
+    transition-delay: 0.7s, 0s;
     text-transform: uppercase;
     font-family: 'Abril Fatface', cursive;
     background: rgba(196, 252, 255, 0.3);
