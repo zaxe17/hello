@@ -314,7 +314,7 @@ span.auto-type {
 .button {
     color: #000;
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 13px;
