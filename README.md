@@ -4,7 +4,7 @@ This is my [webiste](https://zaxe17.github.io/hello/), which you can visit anyti
 ## About
 I'm Jan Marc, and I want to work as a web developer.
 
-## Learnings
+## 🛠️Languages
 - HTML
 - CSS
 - JavaScript
