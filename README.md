@@ -1,8 +1,8 @@
 # My Website
-this is my [webiste](https://zaxe17.github.io/hello/) you can visit anytime
+This is my [webiste](https://zaxe17.github.io/hello/) you can visit anytime. 
 
 ## About
-I'm Jan Marc i want to become a Web dev
+I'm Jan Marc, and I want to work as a web developer.
 
 ## Learnings
 - HTML
