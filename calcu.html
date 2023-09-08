@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            user-select: none;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url("moon.jpg");
+            background-size: cover;
+        }
+        .container {
+            border: 1px solid #ff6a6a;
+            padding: 60px 10px 5px 10px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        .screen {
+            border: 1px solid #ff352b;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin: 0 0 40px 0;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .screen input {
+            height: 100%;
+            padding-right: 0px;
+            text-align: end;
+            font-size: 50px;
+            border: none;
+            background: none;
+            color: #ffeaea;
+        }
+        .btns {
+            margin: 5px;
+            height: 100%;
+            width: 100%;
+            
+        }
+        button {      
+            height: 80px;
+            width: 80px;
+            font-size: 2rem;
+            font-weight: bolder;
+            margin: 5px;
+            border-radius: 50px;
+            background: transparent;
+            backdrop-filter: blur(10px);
+            color: #ffeaea;
+            border: 1px solid #ff352b;
+        }
+        button:active {
+            box-shadow: 0 0 25px 2px #ff352b;
+            color: #ff352b;
+            transform: translate(2px, 2px);
+        }
+        .operator {
+            background: rgba(255,43,74, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">
+            <input type="text" placeholder="0" id="result" readonly>
+        </div>
+        <div class="btns">
+            <button class="operator" onclick="removeOneChar()">C</button>
+            <button class="operator" onclick="appendToInput('%')">%</button>
+            <button class="operator" onclick="clearInput()">CLR</button>
+            <button class="operator" onclick="appendToInput('/')">÷</button>   
+        </div>
+        <div class="btns">
+            <button onclick="appendToInput('7')">7</button>
+            <button onclick="appendToInput('8')">8</button>
+            <button onclick="appendToInput('9')">9</button>
+            <button class="operator" onclick="appendToInput('*')">X</button>   
+        </div>
+        <div class="btns">
+            <button onclick="appendToInput('4')">4</button>
+            <button onclick="appendToInput('5')">5</button>
+            <button onclick="appendToInput('6')">6</button>
+            <button class="operator" onclick="appendToInput('-')">-</button>   
+        </div>
+        <div class="btns">
+            <button onclick="appendToInput('1')">1</button>
+            <button onclick="appendToInput('2')">2</button>
+            <button onclick="appendToInput('3')">3</button>
+            <button class="operator" onclick="appendToInput('+')">+</button>   
+        </div>
+        <div class="btns">
+            <button onclick="appendToInput('00')">00</button>
+            <button onclick="appendToInput('0')">0</button>
+            <button onclick="appendToInput('.')">.</button>
+            <button class="operator" onclick="calculate()">=</button>   
+        </div>
+    </div>
+    
+    
+    <script src="calcu.js"></script>
+</body>
+</html>
