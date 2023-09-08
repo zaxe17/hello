@@ -20,6 +20,14 @@ body {
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	overflow: hidden;
+
+	touch-action: manipulation;
+        -ms-content-zooming: none;
+        touch-action: none;
+        zoom: 1.0;
+        user-scalable: no;
+	-ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
 }
 
 header {
