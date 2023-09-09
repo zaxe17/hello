@@ -261,6 +261,17 @@ span.auto-type {
 	}
 }
 
+@media (max-width: 378px) { 
+         .hi {                  
+                 font-size: 14px;                                   
+         }        
+         .container h1 {                  
+                 color: #B9E9FC;
+                 font-size: 25px; 
+                 font-weight: 600px;                   
+         }            
+ } 
+
 
 /*loader*/
 .loader {
