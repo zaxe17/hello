@@ -22,10 +22,8 @@ body {
 	overflow: hidden;
 
 	
-        touch-action: none;
-        
-        user-scalable: no;
-	
+        touch-action: none;        
+        user-scalable: no;	
 }
 
 header {
@@ -173,7 +171,8 @@ label a {
 
 /*HOME PAGE*/
 .transition {
-	animation: transitionIn 4s;
+	animation: transitionIn 7s;
+	user-select: none;
 }
 
 @keyframes transitionIn {
