@@ -1,6 +1,7 @@
 # My Website
 This is my [webiste](https://zaxe17.github.io/hello/), which you can visit anytime.
-![logo](https://media.tenor.com/CKIexctq4C8AAAAi/arisu-blue-archive.gif)
+
+<img width="100%" align="center" src="https://media.tenor.com/CKIexctq4C8AAAAi/arisu-blue-archive.gif">
 
 ## About
 I'm Jan Marc, and I want to work as a web developer.
