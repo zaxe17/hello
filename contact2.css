@@ -15,7 +15,7 @@ body {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url("loptopbg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-size: 100% 100%;
 }
 
