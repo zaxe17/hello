@@ -68,6 +68,17 @@
     </script>
     <script>
         function sendMail() {
+
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const messageInput = document.getElementById("message");
+    
+        if (!nameInput.value || !emailInput.value || !messageInput.value) {
+            alert("Please fill in all the required fields.");
+            return;
+        }
+
+            
         var params = {
           name: document.getElementById("name").value,
           email: document.getElementById("email").value,
