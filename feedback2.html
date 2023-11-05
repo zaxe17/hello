@@ -98,6 +98,7 @@
               document.getElementById("message").value = "";
               console.log(res);
               alert(`Thanks for messaging me, I love you ${name}`);
+              return;
             })
             .catch(err => console.log(err));
         }
