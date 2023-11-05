@@ -74,7 +74,7 @@
           const emailInput = document.getElementById("email");
           const messageInput = document.getElementById("message");
         
-          if (!nameInput.value || !emailInput.value || !messageInput.value || !audio) {
+          if (!nameInput.value || !emailInput.value || !messageInput.value) {
             audio = new Audio("scream.mp3");
             audio.play();
             alert("Please fill in all the required fields.");
