@@ -67,18 +67,27 @@
         })();
     </script>
     <script>
-        function sendMail() {
+        let audio;
 
-        const nameInput = document.getElementById("name");
-        const emailInput = document.getElementById("email");
-        const messageInput = document.getElementById("message");
+    function sendMail() {
+      const nameInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+      const messageInput = document.getElementById("message");
     
-        if (!nameInput.value || !emailInput.value || !messageInput.value) {
-            alert("Please fill in all the required fields.");
-            return;
+      if (!nameInput.value || !emailInput.value || !messageInput.value) {
+        if (!audio) {
+            audio = new Audio("scream.mp3");
+            audio.play();
         }
-
-            
+        alert("Please fill in all the required fields.");
+        return;
+    }
+    
+    if (audio) {
+        audio.pause();
+        audio = null;
+    }
+    
         var params = {
           name: document.getElementById("name").value,
           email: document.getElementById("email").value,
@@ -96,18 +105,13 @@
               document.getElementById("email").value = "";
               document.getElementById("message").value = "";
               console.log(res);
-              alert(`Thanks for messaging me, iloveyou ${name}`)
+              alert(`Thanks for message me, iloveyou ${name}`)
       
           })
           .catch(err=>console.log(err));
-      
       }
     </script>
-    <!-- Audio button -->
-    <script>
-        const audio = new Audio();
-        audio.src = "scream.mp3";
-    </script>
+    
     <script>
         hamburger = document.querySelector(".hamburger");
         hamburger.onclick = function() {
