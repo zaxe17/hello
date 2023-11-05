@@ -69,47 +69,38 @@
     <script>
         let audio;
 
-    function sendMail() {
-      const nameInput = document.getElementById("name");
-      const emailInput = document.getElementById("email");
-      const messageInput = document.getElementById("message");
-    
-      if (!nameInput.value || !emailInput.value || !messageInput.value) {
-        if (!audio) {
+        function sendMail() {
+          const nameInput = document.getElementById("name");
+          const emailInput = document.getElementById("email");
+          const messageInput = document.getElementById("message");
+        
+          if (!nameInput.value || !emailInput.value || !messageInput.value || !audio) {
             audio = new Audio("scream.mp3");
             audio.play();
-        }
-        alert("Please fill in all the required fields.");
-        return;
-    }
-    
-    if (audio) {
-        audio.pause();
-        audio = null;
-    }
-    
-        var params = {
-          name: document.getElementById("name").value,
-          email: document.getElementById("email").value,
-          message: document.getElementById("message").value,
-        };
-      
-        const serviceID = "service_ne9tj58";
-        const templateID = "template_l9sfhib";
-        const name = document.getElementById('name').value;
-    
-      
+            alert("Please fill in all the required fields.");
+            return;
+          }
+
+          var params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+          };
+
+          const serviceID = "service_ne9tj58";
+          const templateID = "template_l9sfhib";
+          const name = document.getElementById('name').value;
+        
           emailjs.send(serviceID, templateID, params)
-          .then(res=>{
+            .then(res => {
               document.getElementById("name").value = "";
               document.getElementById("email").value = "";
               document.getElementById("message").value = "";
               console.log(res);
-              alert(`Thanks for message me, iloveyou ${name}`)
-      
-          })
-          .catch(err=>console.log(err));
-      }
+              alert(`Thanks for messaging me, I love you ${name}`);
+            })
+            .catch(err => console.log(err));
+        }
     </script>
     
     <script>
