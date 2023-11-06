@@ -185,18 +185,18 @@ label a {
 	opacity: 0.6;
 }
 
-.container form {
+.container .form {
 	width: 100%;
 	text-align: center;
 	padding: 25px 20px;
 }
 
-form h1 {
+.form h1 {
 	padding: 10px 0;
 	text-shadow: 0 0 5px #e528ffe6, 0 0 10px #e528ffe6;
 }
 
-form .id {
+.form .id {
 	position: relative;
 }
 
@@ -208,7 +208,7 @@ form .id {
 	transform: translateY(-50%);
 }
 
-form input {
+.form input {
 	width: 100%;
 	height: 50px;
 	margin: 4px 0;
@@ -221,7 +221,7 @@ form input {
 	font-size: 20px;
 }
 
-form textarea {
+.form textarea {
 	padding: 5px 15px;
 	border: 1px solid #5c5c5c;
 	border-radius: 3px;
@@ -234,7 +234,7 @@ form textarea {
 	font-family: 'Open Sans', sans-serif;
 }
 
-form button {
+.form button {
 	margin-top: 5px;
 	border: none;
 	background: #E528FF;
@@ -247,7 +247,7 @@ form button {
 	border-radius: 3px;
 }
 
-form button:hover {
+.form button:hover {
 	box-shadow: 0 0 20px rgba(229, 40, 255, 0.8);
 }
 
@@ -255,21 +255,21 @@ form button:hover {
 	text-transform: capitalize;
 }
 
-form input:focus,
-form textarea:focus {
+.form input:focus,
+.form textarea:focus {
 	border: 1px solid #E528FF;
 	color: #E528FF;
 	transition: all 0.3s ease;
 }
 
-form input:focus::placeholder,
-form textarea:focus::placeholder {
+.form input:focus::placeholder,
+.form textarea:focus::placeholder {
 	padding-left: 4px;
 	color: #E528FF;
 	transition: all 0.3s ease;
 }
 
-form input:focus + i {
+.form input:focus + i {
 	text-shadow: 0 0 5px #e528ffe6, 0 0 10px #e528ffe6;
 	color: #E528FF;
 	transition: all 0.3s ease;
@@ -281,12 +281,12 @@ form input:focus + i {
 		width: 360px;
 		box-shadow: 0 0 18px 5px rgba(40, 243, 255, 0.6);
 	}
-	.container form {
+	.container .form {
 		width: 100%;
 		text-align: center;
 		padding: 25px 20px;
 	}
-	form h1 {
+	.form h1 {
 		padding: 5px 0;
 		text-shadow: 0 0 5px #28f3ffcc, 0 0 10px #28f3ffcc;
 	}
@@ -297,7 +297,7 @@ form input:focus + i {
 		right: 20px;
 		transform: translateY(-50%);
 	}
-	form input {
+	.form input {
 		width: 100%;
 		height: 50px;
 		margin: 4px 0;
@@ -307,27 +307,27 @@ form input:focus + i {
 		font-size: 20px;
 	}
 
-	form textarea {
+	.form textarea {
 		color: #98faff;
 	}
 
-	form button {
+	.form button {
 		margin-top: 5px;
 		border: none;
 		background: #28F3FF;
 		box-shadow: 0 0 20px rgba(40, 243, 255, 0.6);
 	}
-	form input:focus,
-	form textarea:focus {
+	.form input:focus,
+	.form textarea:focus {
 		border: 1px solid #28F3FF;
 		color: #28F3FF;
 	}
-	form input:focus::placeholder,
-	form textarea:focus::placeholder {
+	.form input:focus::placeholder,
+	.form textarea:focus::placeholder {
 		color: #28F3FF;
 	}
 
-	form input:focus + i {
+	.form input:focus + i {
 		color: #28F3FF;
 		text-shadow: 0 0 5px #28f3ffcc, 0 0 10px #28f3ffcc;
 	}
