@@ -42,7 +42,7 @@
     <div class="hahaha">
         <section></section>
         <div class="container">
-            <form action="https://api.emailjs.com/api/v1.0/email/send" method="POST">
+            <form>
                 <h1>Give your feedback</h1>
                 <div class="id">
                     <input class="capital" type="text" name="name" id="name" placeholder="Full name" required>
@@ -69,41 +69,44 @@
     <script>
         let audio;
 
-        function sendMail() {
-          const nameInput = document.getElementById("name");
-          const emailInput = document.getElementById("email");
-          const messageInput = document.getElementById("message");
+          function sendMail() {
+            const nameInput = document.getElementById("name");
+            const emailInput = document.getElementById("email");
+            const messageInput = document.getElementById("message");
         
-          if (!nameInput.value || !emailInput.value || !messageInput.value || !audio) {
-            if (!audio) {
-              audio = new Audio("scream.mp3");
-            }
-            audio.play();
-            alert("Please fill in all the required fields.");
-            return;
-          }
-        
-          var params = {
-            name: nameInput.value,
-            email: emailInput.value,
-            message: messageInput.value,
-          };
-        
-          const serviceID = "service_ne9tj58";
-          const templateID = "template_l9sfhib";
-          const name = nameInput.value;
-        
-          emailjs.send(serviceID, templateID, params)
-            .then(res => {
-              nameInput.value = "";
-              emailInput.value = "";
-              messageInput.value = "";
-              console.log(res);
-              alert(`Thanks for messaging me, I love you ${name}`);
+            if (!nameInput.value || !emailInput.value || !messageInput.value || !audio) {
+              if (!audio) {
+                audio = new Audio("scream.mp3");
+              }
+              audio.play();
+              alert("Please fill in all the required fields.");
               return;
-            })
-            .catch(err => console.log(err));
-        }
+            }
+        
+            var params = {
+              name: nameInput.value,
+              email: emailInput.value,
+              message: messageInput.value,
+            };
+        
+            const serviceID = "your_service_id";
+            const templateID = "your_template_id";
+            const name = nameInput.value;
+        
+            emailjs.send(serviceID, templateID, params)
+              .then(res => {
+                nameInput.value = "";
+                emailInput.value = "";
+                messageInput.value = "";
+                console.log(res);
+                alert(`Thanks for messaging me, I love you ${name}`);
+                if (audio) {
+                  audio.pause();
+                }
+                return;
+              })
+              .catch(err => console.log(err));
+          }
     </script>
     
     <script>
