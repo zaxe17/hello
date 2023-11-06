@@ -67,22 +67,20 @@
         })();
     </script>
     <script>
+        let audio;
+
         function sendMail() {
           const nameInput = document.getElementById("name");
           const emailInput = document.getElementById("email");
           const messageInput = document.getElementById("message");
         
-          if (!nameInput.value || !emailInput.value || !messageInput.value) {
+          if (!nameInput.value || !emailInput.value || !messageInput.value || !audio) {
             if (!audio) {
-              const audio = new Audio("scream.mp3");
-              audio.play();
+              audio = new Audio("scream.mp3");
             }
+            audio.play();
             alert("Please fill in all the required fields.");
             return;
-          }
-        
-          if (audio && !audio.paused) {
-            audio.pause();
           }
         
           var params = {
