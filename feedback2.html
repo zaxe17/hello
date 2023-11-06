@@ -67,46 +67,40 @@
         })();
     </script>
     <script>
-        let audio;
+        let audio = new Audio("scream.mp3");
 
-          function sendMail() {
-            const nameInput = document.getElementById("name");
-            const emailInput = document.getElementById("email");
-            const messageInput = document.getElementById("message");
+        function sendMail() {
+          const nameInput = document.getElementById("name");
+          const emailInput = document.getElementById("email");
+          const messageInput = document.getElementById("message");
         
-            if (!nameInput.value || !emailInput.value || !messageInput.value || !audio) {
-              if (!audio) {
-                audio = new Audio("scream.mp3");
-              }
-              audio.play();
-              alert("Please fill in all the required fields.");
-              return;
-            }
-        
-            var params = {
-              name: nameInput.value,
-              email: emailInput.value,
-              message: messageInput.value,
-            };
-        
-            const serviceID = "your_service_id";
-            const templateID = "your_template_id";
-            const name = nameInput.value;
-        
-            emailjs.send(serviceID, templateID, params)
-              .then(res => {
-                nameInput.value = "";
-                emailInput.value = "";
-                messageInput.value = "";
-                console.log(res);
-                alert(`Thanks for messaging me, I love you ${name}`);
-                if (audio) {
-                  audio.pause();
-                }
-                return;
-              })
-              .catch(err => console.log(err));
+          if (!nameInput.value || !emailInput.value || !messageInput.value) {
+            audio.play();
+            alert("Please fill in all the required fields.");
+            return;
           }
+        
+          var params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value,
+          };
+        
+          const serviceID = "service_ne9tj58";
+          const templateID = "template_l9sfhib";
+          const name = document.getElementById('name').value;
+        
+          emailjs.send(serviceID, templateID, params)
+            .then(res => {
+              document.getElementById("name").value = "";
+              document.getElementById("email").value = "";
+              document.getElementById("message").value = "";
+              console.log(res);
+              alert(`Thanks for messaging me, I love you ${name}`);
+              return;
+            })
+            .catch(err => console.log(err));
+        }
     </script>
     
     <script>
